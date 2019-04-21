@@ -1,6 +1,7 @@
 package gt.edu.umg.ingenieria.sistemas.laboratorio1.service;
 
 import gt.edu.umg.ingenieria.sistemas.laboratorio1.model.Client;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.ServletContext;
 import java.io.File;
@@ -20,6 +21,7 @@ import java.lang.reflect.Field;
  *
  * @author Josué Barillas (jbarillas)
  */
+@Service
 public class ReportService {
     public String generateReport(List<Client> clientList, ServletContext servletContext) {
 
